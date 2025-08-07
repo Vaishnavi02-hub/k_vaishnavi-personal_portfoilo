@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | K Vaishnavi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container">
+    <h2>Get In Touch</h2>
+    <p><strong>📞 Phone:</strong> 7975840901</p>
+    <p><strong>📧 Email:</strong> kvaishnavi0204@gmail.com</p>
+
+    <h3>Send a Message</h3>
+    <form action="https://formspree.io/f/xkgzqzdk" method="POST">
+      <input type="hidden" name="_redirect" value="thankyou.html">
+      
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 K. Vaishnavi. All rights reserved.
+  </footer>
+
+</body>
+</html>

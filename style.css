@@ -1,0 +1,171 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px; /* To avoid overlap with fixed footer */
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #03dac6;
+  color: #121212;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* NAVIGATION */
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #90caf9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #03dac6;
+}
+
+/* EXPLORE MORE BUTTON CENTERED */
+.center-btn {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 60px;
+}
+
+.explore-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #03dac6;
+  color: #121212;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #00c4b4;
+}
+
+/* CONTAINERS AND SECTIONS */
+.container,
+.about-section {
+  max-width: 800px;
+  margin: auto;
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* LISTS */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* FORMS */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #555;
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 6px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #03dac6;
+  outline: none;
+}
+
+form button {
+  padding: 10px;
+  background-color: #03dac6;
+  color: #121212;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #00c4b4;
+}
+
+/* FOOTER - FIXED AT BOTTOM */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background-color: #1e1e1e;
+  border-top: 1px solid #333;
+  color: #aaa;
+}
+
+/* RESPONSIVE MEDIA QUERY */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+}
